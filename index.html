@@ -18,42 +18,44 @@
         <div class="col-span-3">
             <img class="px-20" class="w-full" src="image/photo_2023-02-16_20-07-35.jpg">
         </div>
-        <div class="col-span-2 p-16 text-center mr-20 bg-neutral-100">
+        <div class="col-span-2 p-12 text-center mr-20 bg-neutral-100">
             <h4 class="text-2xl font-semibold">Income</h4>
-            <div  class="text-xl font-medium grid grid-cols-3 my-6">
+            <div class="text-xl font-medium grid grid-cols-3 my-6">
                 <label class="text-right" for="income">Income:</label>
-                <input class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
+                <input id="income" class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
             </div>
             <h3 class="text-2xl font-semibold">Expenses</h3>
             <div>
                 <div class="text-xl font-medium grid grid-cols-3  my-5">
                     <label class="text-right" for="food">Food:</label>
-                    <input class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
+                    <input id="food" class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
                 </div>
                 <div class="text-xl font-medium grid grid-cols-3  my-5">
                     <label class="text-right" for="rent">Rent:</label>
-                    <input class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
+                    <input id="rent" class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
 
                 </div>
                 <div class="text-xl font-medium grid grid-cols-3  my-5">
                     <label class="text-right" for="clothes">Clothes:</label>
-                    <input class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
+                    <input id="clothes" class="ml-5 col-span-2 bg-sky-200 rounded-sm p-1" type="text">
                 </div>
             </div>
-            <button class="text-white text-xl font-medium bg-indigo-400 px-12 py-2 rounded-md  my-4">Calculate</button>
-            <p class="text-2xl font-semibold  my-6">Total Expenses: <span>00</span></p>
-            <p class="text-2xl font-semibold">Balance: <span>00</span></p>
+            <button id="calculate"
+                class="text-white text-xl font-medium bg-indigo-400 px-12 py-2 rounded-md  my-4">Calculate</button>
+            <p class="text-2xl font-semibold  my-6">Total Expenses: <span id="total-expense">00</span></p>
+            <p class="text-2xl font-semibold">Balance: <span id="balance">00</span></p>
             <p class="text-xl font-medium  my-6">Save:
-                <input class="ml-5 w-1/4 bg-sky-200 rounded-sm p-1" type="text">
+                <input id="save" class="ml-5 w-1/4 bg-sky-200 rounded-sm p-1" type="text">
                 <span class="px-3">%</span>
-                <button class="text-white text-xl font-medium bg-indigo-400 px-12 py-2 rounded-md">Save</button>
+                <button id="save-btn" class="text-white text-xl font-medium bg-indigo-400 px-12 py-2 rounded-md">Save</button>
             </p>
-            <p class="text-2xl font-semibold my-6">Saving Amount: <span>00</span></p>
-            <p class="text-2xl font-semibold">Remaining Balance: <span>00</span></p>
+            <p class="text-2xl font-semibold my-6">Saving Amount: <span id="saving-amount">00</span></p>
+            <p class="text-2xl font-semibold">Remaining Balance: <span id="remaining-balance">00</span></p>
         </div>
     </section>
 
     <!-- js -->
+    <script src="js/utilites.js"></script>
     <script src="js/balance.js"></script>
 </body>
 
